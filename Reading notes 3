@@ -1,0 +1,11 @@
+# Readingnotes-03
+
+# VCM
+> - Any commited change is refered as a snapshot
+> - Usually rely on local operations to function correctly
+> - Applications like git track changes that are made to it
+> - This method helps losing or corrupting files
+> - Easily clone and import
+> - You can hide any changes from the commit by stashing them
+> - Easy to work with multiple repositories
+> - You can clone a repositories
