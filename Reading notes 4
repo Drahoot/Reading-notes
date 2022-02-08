@@ -1,0 +1,164 @@
+# Day-03-notes
+
+# CSS
+Cascading Style Sheets: own form of language
+Used to style html and XML
+Put a link of style sheets into the head 
+Make a new file for css to make html cleaner
+p {
+  color: red;
+  }
+  will change **EVERY** paragraph in html to red
+
+header {
+    background: red;
+    text-align: center (left) (right)
+    border: 1rem solid;
+    Margin: 5px;
+    }
+Change the entire background
+Center the header
+changes size 
+
+Always close css color with a ;
+
+main {
+  border: 1rem solid;
+  padding: 50px;
+  margin: 5px;
+  }
+  changes size on the inside
+  and then outside
+Footer {
+  border: 1rem solid;
+  }
+  Will enclose both the main and footer portion in a box, 1rem can be different styling/code for different borders
+  margins are additive, better to keep it in one spot if bodies are next to each other
+  
+  Look up on MDN how to change faunts
+  
+  <link href='source' rel="stylesheet">
+  you can have multiple stylesheets
+  just do that same but change source
+  make sure you link it to the inside of the html
+  
+  lets say you have multiple h3's (This will be within one of them) lets also say one my h3's is an introduction
+  #intro {
+    text-align: center;
+    }
+    
+Float
+  img/h3/really anything {
+  float: right;
+  }
+Makes a header and another block be able to fit side by side
+This is a block level element
+
+
+Using coolers website
+body {
+  background-color: copypasta;
+  }
+
+MV: Move
+PWD: print working directory, shows where you are at
+Git Pull: Bring everything thats been commited from a repo to local machine
+
+
+
+
+
+
+
+# To move a file
+MV, File name, File destination
+
+# Javascript Notes
+
+Jave uses input output events
+logic bases, using functions or actions
+oh no it uses math
+variables can be changed for user input
+id="" creats a unique tag for html
+css elements can be implemented into JS
+
+
+put this within the body
+<p id="Geeks">He be geekin</p>
+<script>
+  document.getelementbyid("Geeks").innerHTML = 'He glad';
+</script>
+make it elsewhere like css
+put it within the last part of the body. Usually is best at the end of the body.
+<script src=" whatever.js"></script>
+
+within .js file
+window.promt
+let sign = prompt("blahblahblah");
+sign is a variable, represents a value that user enters into the prompt
+document.write('<h3>' + sign + '</h3>);
+will write to end of document
+created text within the space
+
+let Firstname = prompt("whats your name?")
+let age = promt('how old are you?');
+let petsName = prompt('what is your pets name?');
+let tod = promt('What hour is it?');
+console.log('Time of day', tod, typeof tod);
+
+if(tod === 7){
+alert ('IT BE 7')
+}
+double or single qoutes indicate a string
+no qoutes is an intiger
+Two = is a shallow compare
+
+if (tod > 18) { 
+alert('good evening!')
+} 
+else if(tod > 12 ){
+alert('good afternoon');
+}
+else if (tod >= 0){
+alert('goodmorning');
+}
+else {
+alert('Welcome')
+}
+
+
+you can combine esle and if statements
+
+
+// Conditionals
+// based on something else -> 
+// 1 > 5 -> False
+// "Josh" = 7 -> False
+if (1 < 5) {
+alert('THIS IS TRUE')
+} 
+// ELSE a.k.a OTHERWISE -> False
+swap the greater than sybmol will result in a false statement executing the else variable
+else {
+alert ('THIS IS A LIE')
+}
+will show up as true, this is an example of a condition
+
+if (firstName === 'alex') { alert ('Zork loves you')} else { alert ('Imposter') }
+
+alert('hello' + Firstname + 'You are ' + age + 'and your pets name is ' + petsName + '!');
+ document.write('<h3>' + 'hello' + firstname + '</h3>')
+
+let, const, and var are identifiers for variables
+const must stay the same
+const zork = 'zork'
+
+<script>
+  alert ("hello world!") you can have any text inside of the alert bubble
+  </script>
+  
+  
+  
+  
+  <script> src="javascript.js">
+  
