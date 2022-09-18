@@ -1,0 +1,11 @@
+## List Comprehensions
+- Use nested loops instead of for loops
+- In order for a list comprehension to work it needs:
+  - A carried out expression
+  - Object that the expression will work within
+  - Iterable list of objs to build a new list
+- List comprehension is more flexible than loops
+- Filters can be added and can act as an conditional statement
+- It is entirely possible to work on parts of a list using only filters
+- You can parse a file using List comprehension
+- lower() and upper() can be used within a list comprehension

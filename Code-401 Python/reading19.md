@@ -1,0 +1,34 @@
+# [Python Regular Expression tutorial](https://www.datacamp.com/tutorial/python-regular-expression-tutorial)
+- Regular expressions (often shortened as regex) are a sequence of characters used to chech whether a pattern exists in a given string
+- They are used at the server side to verify the format of emails and passwords during registration
+  - used to parse data to find replace or delete certain strings
+- Regular expressions are supported by the re module
+  - use "import re"
+- use you can use the match() method to verify a string of characters
+  - it will return True or false dependant on input
+- a period will match any single character except a newline character
+  - IE re.search(r'Co.k.e', 'Cookie').group()
+- Using a carrot (^) matches the start of a string
+  - ie re.search(r'^Eat', "Eat Cake!").group()
+- Using $ matches the end of string
+  - ie re.search(r'cake$', "Cake! Let's eat cake").group()
+- You can even search for every letter and number there is using [a-zA-Z0-9]
+- you can search for repetition using the + symbol
+  - IE re.search(r'Co+kie', 'Cooookie').group() 
+  - this will return 'Cooookie'
+- Using the ? will determine if there is any variation in a string
+  - IE re.search(r'Colou?r', 'Color').group()
+  - (since we dont use the u here in the US) this will return 'Color'
+
+# [Shutil](https://pymotw.com/3/shutil/)
+- Shutil is a module that includes high level file operations such as copying and archiving
+- copyfile() function will copy all contents of source file and raises IOError if it doesnt have any permissions
+- there are multiple variations of the copyfile function
+  - copyfile()
+  - copyfileobj()
+  - copy()
+  - copy2()
+- To copy permissions from a file you can use the copymode() method
+- for metadata, copystat()
+- you can even copy trees using copytree()
+- There is a filter method to find a specific file, to filter use the which() method

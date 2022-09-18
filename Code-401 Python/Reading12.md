@@ -1,0 +1,15 @@
+## Pandas in 10
+- Create a series by passing in a list of values and let pandas create an index
+- Create a DataFrame and pass in a NumPy array with labeled columns
+- Create a DF by passing a dictionary of objects that can be converted into a series-like structure
+- Columns can have a few different dtyps
+- To get the top and bottom rows you can use these methods:
+  - For the top: df.head()
+  - For the bottom: df.tail()
+- Display index and columns: 
+  - df.index
+  - df.columns
+- df.to_numpy() will give a Numpy representaion of the underlying data
+- df.describe() shows a quick statistics summary of the data set
+- df.sort_index(axis, ascending= ) sorting by an axis
+- slice rows: []
